@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+
+  --white: hsl(0, 0%, 100%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --m-transparent-white: hsla(0, 0%, 100%, 0.6);
+  --body-font-size: 15px;
+}
+
+body {
+  background-color: var(--dark-blue);
+}
+
+section {
+  background-color: var(--dark-desaturated-blue);
+  width: 70%;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-lexend {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.image-box:hover {
+  filter: blur(2px);
+}
+
+.accent {
+  color: var(--soft-violet);
+}
+
+.white-heading {
+  color: var(--white);
+}
+
+.transparent-white {
+  color: var(--transparent-white);
+}
+
+.m-transparent-white {
+  color: var(--m-transparent-white);
+}
+
+.fs-15 {
+  font-size: var(--body-font-size);
+}
+
+.bg-soft-violet {
+  background-color: hsla(277, 64%, 61%, 0.4);
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.detail-parent {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  section {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .detail {
+    margin-bottom: 1.5rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
