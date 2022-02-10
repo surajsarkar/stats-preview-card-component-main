@@ -36,10 +36,6 @@ section {
   font-weight: 700;
 }
 
-.image-box:hover {
-  filter: blur(2px);
-}
-
 .accent {
   color: var(--soft-violet);
 }
@@ -67,6 +63,7 @@ section {
 img {
   height: 100%;
   width: 100%;
+  mix-blend-mode: overlay;
 }
 
 .detail-parent {
